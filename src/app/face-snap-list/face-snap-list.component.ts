@@ -19,6 +19,5 @@ export class FaceSnapListComponent implements OnInit {
 
   ngOnInit(): void {
     this.faceSnaps = this.faceSnapsService.getAllFaceSnaps();
-    throw new Error('Method not implemented.');
   }
 }
