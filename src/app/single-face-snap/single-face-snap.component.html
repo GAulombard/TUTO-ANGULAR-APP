@@ -1,7 +1,7 @@
-<div class="face-snap-card" [ngClass]="{ snapped: buttonText === 'Oups unsnap !' }">
+<div class="face-snap-card" *ngIf="faceSnap$ | async as faceSnap" [ngClass]="{ snapped: buttonText === 'Oups unsnap !' }">
     <h2>{{ faceSnap.title | uppercase }}</h2>
     <a routerLink="/facesnaps">back</a>
-    <p>Mis en ligne le {{ faceSnap.creationDate | date }}</p>
+    <p>Mis en ligne le {{ faceSnap.createdDate | date }}</p>
     <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
     <p>{{ faceSnap.description }}</p>
     <p>

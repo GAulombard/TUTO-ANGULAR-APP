@@ -26,7 +26,7 @@
 <div class="face-snap-card" *ngIf="faceSnapPreview$ | async as faceSnap">
     <h2>{{ faceSnap.title | uppercase }}</h2>
     <a routerLink="/facesnaps">back</a>
-    <p>Mis en ligne le {{ faceSnap.creationDate | date }}</p>
+    <p>Mis en ligne le {{ faceSnap.createdDate | date }}</p>
     <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
     <p>{{ faceSnap.description }}</p>
     <p *ngIf="faceSnap.location">Photo prise à {{faceSnap.location }}</p>
