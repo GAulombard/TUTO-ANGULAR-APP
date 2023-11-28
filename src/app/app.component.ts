@@ -4,13 +4,14 @@ import { RouterOutlet } from '@angular/router';
 import { FaceSnapListComponent } from './face-snaps/components/face-snap-list/face-snap-list.component';
 import { Observable, filter, interval, map, tap } from 'rxjs';
 import { CoreModule } from './core/core.module';
+import { AuthModule } from './auth/auth.module';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, CoreModule],
+  imports: [CommonModule, RouterOutlet, CoreModule, AuthModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

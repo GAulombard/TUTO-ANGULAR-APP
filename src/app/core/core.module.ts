@@ -8,11 +8,11 @@ import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
-    
+
   ],
   imports: [
     CommonModule,
-    HeaderComponent
+    HeaderComponent,
   ],
   providers: [
     importProvidersFrom(HttpClientModule),
